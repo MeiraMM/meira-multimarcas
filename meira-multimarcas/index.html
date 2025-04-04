@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meira Multimarcas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .text-red { color: #e60000; }
+    .bg-red { background-color: #e60000; }
+    .hover-red:hover { color: #e60000; }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- NAVBAR -->
+  <header class="bg-black fixed w-full z-50 shadow-lg border-b border-red-600">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <img src="images/logo.jpeg" alt="Meira Multimarcas Logo" class="h-12">
+      <nav class="space-x-6 text-white text-sm font-semibold">
+        <a href="#inicio" class="hover-red">Início</a>
+        <a href="#sobre" class="hover-red">Sobre</a>
+        <a href="#veiculos" class="hover-red">Veículos</a>
+        <a href="#contato" class="hover-red">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/onix01.jpeg');">
+    <div class="bg-black bg-opacity-80 text-center p-10 rounded-lg">
+      <h2 class="text-5xl font-extrabold text-red mb-4">Seu próximo carro está aqui</h2>
+      <p class="text-xl text-white">Performance, estilo e segurança reunidos em um só lugar</p><p class="text-lg text-gray-600">Venha viver a experiência de adquirir um veículo com quem entende de qualidade e compromisso. Atendimento 100% personalizado e transparência total na negociação.</p>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="relative bg-white text-black text-center py-20">
+    <div class="absolute top-4 left-4 text-left text-sm text-gray-400">Desde 2012, conectando pessoas aos seus sonhos de 4 rodas</div> class="py-20 bg-white text-black text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-red mb-4">Quem Somos</h2>
+      <p class="text-lg mb-4">
+        A Meira Multimarcas é uma concessionária que acredita na experiência além da compra. Oferecemos veículos selecionados, revisados e com garantia para clientes exigentes.
+      </p><p class="text-lg text-gray-600">Venha viver a experiência de adquirir um veículo com quem entende de qualidade e compromisso. Atendimento 100% personalizado e transparência total na negociação.</p>
+    </div>
+  </section>
+
+  <!-- VEÍCULOS -->
+  <section id="veiculos" class="py-20 bg-black text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-red text-center mb-10">Veículo em Destaque</h2>
+      <div class="bg-black text-white rounded-xl shadow-lg overflow-hidden border border-red-600">
+        <img src="images/onix01.jpeg" alt="Chevrolet Onix Premier" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-red mb-2">Chevrolet Onix Premier Turbo 1.0 AT</h3>
+          <p class="text-gray-300 text-sm mb-4">Sedan automático, completo, com excelente consumo e conforto.</p><p class="text-lg text-gray-600">Venha viver a experiência de adquirir um veículo com quem entende de qualidade e compromisso. Atendimento 100% personalizado e transparência total na negociação.</p>
+          <ul class="text-gray-200 text-sm space-y-1 mb-4">
+            <li>✔ Motor 1.0 Turbo Flex</li>
+            <li>✔ Câmbio automático de 6 marchas</li>
+            <li>✔ Interior premium em couro</li>
+            <li>✔ Central multimídia com Android Auto e Apple CarPlay</li>
+            <li>✔ Rodas de liga leve aro 16"</li>
+          </ul>
+          <button onclick="document.getElementById('modalOnix').classList.remove('hidden')" class="bg-red hover:bg-white hover:text-black font-semibold py-2 px-4 rounded transition">
+            Ver mais fotos
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modalOnix" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center overflow-y-auto p-6">
+    <button onclick="document.getElementById('modalOnix').classList.add('hidden')" class="text-white text-2xl self-end mb-4">✖</button>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl">
+      <img src="images/onix01.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix02.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix03.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix04.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix05.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix06.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix07.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix08.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix09.jpeg" class="rounded-lg object-cover w-full h-52">
+      <img src="images/onix10.jpeg" class="rounded-lg object-cover w-full h-52">
+    </div>
+  </div>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-20 bg-white text-center text-black">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-red mb-6">Fale Conosco</h2>
+      <p class="mb-4">📞 (99) 99999-9999</p><p class="text-lg text-gray-600">Venha viver a experiência de adquirir um veículo com quem entende de qualidade e compromisso. Atendimento 100% personalizado e transparência total na negociação.</p>
+      <p class="mb-4">✉️ contato@meiramultimarcas.com.br</p><p class="text-lg text-gray-600">Venha viver a experiência de adquirir um veículo com quem entende de qualidade e compromisso. Atendimento 100% personalizado e transparência total na negociação.</p>
+      <p>📍 Av. Principal, 123 - Sua Cidade - BR</p><p class="text-lg text-gray-600">Venha viver a experiência de adquirir um veículo com quem entende de qualidade e compromisso. Atendimento 100% personalizado e transparência total na negociação.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-red text-white py-6 text-center text-sm">
+    &copy; 2025 Meira Multimarcas. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
